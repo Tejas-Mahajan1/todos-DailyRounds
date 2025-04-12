@@ -94,43 +94,6 @@ npm install
 │   └── package.json
 ```
 
-## Database Schema
-
-### Todo Model
-```javascript
-{
-  title: String,
-  description: String,
-  priority: Enum['High', 'Medium', 'Low'],
-  tags: [String],
-  mentions: [ObjectId],
-  notes: [{
-    content: String,
-    createdAt: Date
-  }],
-  createdBy: ObjectId,
-  createdAt: Date,
-  updatedAt: Date
-}
-```
-
-### User Model
-```javascript
-{
-  username: String,
-  email: String,
-  createdAt: Date
-}
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ## License
 
 This project is licensed under the MIT License.
